@@ -19,7 +19,9 @@ def jumpsearch(array, item, size):
         return prev
 
     return None
+
+
 if __name__ == "__main__":
-    mas = list(map(int, input("Введите массив: ").split()))
-    guess = int(input("Введите число, которое необходимо найти: "))
-    print(int(jumpsearch(mas, guess, len(mas))))
+    arr = list(map(int, input("Enter a sorted array: ").split()))
+    guess = int(input("Enter a number to find: "))
+    print(jumpsearch(arr, guess))

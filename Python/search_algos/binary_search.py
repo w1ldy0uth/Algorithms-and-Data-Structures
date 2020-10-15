@@ -15,6 +15,6 @@ def binsearch(array, item):
 
 
 if __name__ == "__main__":
-    mas = list(map(int, input("Введите массив: ").split()))
-    guess = int(input("Введите число, которое необходимо найти: "))
-    print(binsearch(mas, guess))
+    arr = list(map(int, input("Enter a sorted array: ").split()))
+    guess = int(input("Enter a number to find: "))
+    print(binsearch(arr, guess))

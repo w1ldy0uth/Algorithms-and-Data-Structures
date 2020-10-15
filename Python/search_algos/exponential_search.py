@@ -16,6 +16,6 @@ def exponsearch(array, item):
     return None
 
 if __name__ == "__main__":
-    mas = list(map(int, input("Введите массив: ").split()))
-    guess = int(input("Введите число, которое необходимо найти: "))
-    print(exponsearch(mas, guess))
+    arr = list(map(int, input("Enter a sorted array: ").split()))
+    guess = int(input("Enter a number to find: "))
+    print(exponsearch(arr, guess))
