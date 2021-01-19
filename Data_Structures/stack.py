@@ -12,11 +12,11 @@ class Stack:
         return len(self.stack) == 0
 
     def print_stack(self):
-        for i in self.stack:
-            if i != self.stack[len(self.stack)-1]:
-                print(i, end=", ")
+        for item in self.stack:
+            if item != self.stack[len(self.stack) - 1]:
+                print(item, end=", ")
             else:
-                print(i)
+                print(item)
 
 
 if __name__ == '__main__':
