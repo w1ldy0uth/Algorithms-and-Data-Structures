@@ -1,3 +1,6 @@
+import random
+
+
 def insertionsort(arr):
     for i in range(1, len(arr)):
         key = arr[i]
@@ -9,6 +12,8 @@ def insertionsort(arr):
 
 
 if __name__ == "__main__":
-    arr = list(map(int, input("Enter an unsorted array: ").split()))
+    n = int(input("Enter an array length: "))
+    arr = [random.randint(-100, 100) for i in range(n)]
+    print(arr)
     insertionsort(arr)
     print(arr)

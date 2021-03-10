@@ -1,3 +1,6 @@
+import random
+
+
 def selectionsort(arr):
     for i in range(len(arr)):
         min_idx = i
@@ -8,6 +11,8 @@ def selectionsort(arr):
 
 
 if __name__ == "__main__":
-    arr = list(map(int, input("Enter an unsorted array: ").split()))
+    n = int(input("Enter an array length: "))
+    arr = [random.randint(-100, 100) for i in range(n)]
+    print(arr)
     selectionsort(arr)
     print(arr)
